@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>NJ</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Custom jQuery 3d tag cloud -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="/assets/js/jquery.svg3dtagcloud.min.js"></script>
+    <script src="/assets/js/skillsphere.js"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald&subset=latin,latin-ext"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <div class="wrapper">
+      
+        <nav id="navbar" class="navbar sticky-top navbar-dark bg-dark justify-content-center">
+          <ul class="nav justify-content-between w-50">
+            <li class="nav-item">
+              <a href="#hero" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#skills" class="nav-link">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a href="#work" class="nav-link">Work</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+      <canvas id="canvas1"></canvas>
+
+      <section class="hero" id="hero">
+        <p class="welcome">Hi, I'm</p>
+        <p class="welcome-text">Web and Mobile Developer</p>
+      </section>
+
+      <section class="about" id="about">
+        <div class="container">
+          <div class="row">
+            <h1 class="about-title">About me</h1>
+            <p class="about-text">
+              Passionately connected to web and mobile development for few
+              years. Worked with a vast range of technologies, quick learner,
+              good time management and interpersonal skills. Comfortable working
+              alone, as well as part of a team.
+              <br /><br />
+              To relax I like to go for a walk or bike ride, and enjoy a good
+              book. Interested in expanding my knowledge and further improving
+              my programming skills.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills" id="skills">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2">
+              <h1 class="skills-title">Skills</h1>
+            </div>
+            <div class="col-md-6">
+              <p class="skills-text">
+                My main skill is mobile development using Kotlin and SwiftUI.
+                Building small and medium web apps and websites with HTML5,
+                CSS3, Javascript(vanilla/Typescript), Bootstrap... <br />
+                Full-stack experience in both web and mobile development.
+              </p>
+            </div>
+            <div class="col-md-4" id="tagcontainer">
+              <div class="tagcloud" id="tagcloud"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="work" id="work">
+        <div class="container">
+          <h1 class="work-title">Work</h1>
+          <p class="work-text">
+            Finished two co-ops with half a year experience. On the first one I
+            have created and managed a database by using MySQL and PL/SQL on
+            Oracle database. The second one was testing an Android app using
+            Mockito, and adding features to another app using NativeScript.
+          </p>
+        </div>
+      </section>
+
+      <section class="contact justify-content-center" id="contact">
+        <div class="container" id="contact-container">
+          <div class="row">
+            <h1 class="contact-title">Contact</h1>
+            <p class="contact-text">
+              If you are interested in working with me, feel free to send me a
+              message :)
+            </p>
+          </div>
+          <div class="row" id="email-form">
+            <form action="">
+              <label for="exampleInputEmail1">Email address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                placeholder="Enter email"
+              />
+              <label for="exampleFormControlTextarea1">Message</label>
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="5"
+                placeholder="Enter message"
+              ></textarea>
+            </form>
+          </div>
+          <div class="row">
+            <button type="button" class="btn btn-outline">Submit</button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="/assets/js/script.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

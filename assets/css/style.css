@@ -1,0 +1,170 @@
+@import url(//fonts.googleapis.com/css?family=Oswald&subset=latin,latin-ext);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+canvas {
+  position: absolute;
+  z-index: 3;
+}
+
+body {
+  background: #0e050f;
+}
+
+::-webkit-scrollbar {
+  display: none; /* Chrome */
+}
+
+html {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.hero {
+  text-align: center;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/assets/img/bluematrix.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.welcome {
+  padding-top: 16%;
+  padding-right: 70%;
+  font-size: 100px;
+  color: #9388a2;
+  -webkit-text-stroke: 1px aquamarine;
+  font-family: "Oswald", sans-serif;
+}
+
+.welcome-text {
+  padding-top: 5%;
+  font-size: 80px;
+  color: #9388a2;
+  -webkit-text-stroke: 1px aquamarine;
+  font-family: "Oswald", sans-serif;
+}
+
+.about,
+.contact {
+  font-family: "Oswald", sans-serif;
+  height: 90vh;
+  background-color: #170b3b;
+  letter-spacing: 1px;
+}
+
+.about-text,
+.skills-text,
+.work-text,
+.contact-text {
+  font-size: 120%;
+  width: 50%;
+  padding-top: 3%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #9388a2;
+}
+
+.container {
+  padding-top: 10%;
+}
+
+.skills,
+.work {
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 1px;
+  height: 90vh;
+  background-color: #0e050f;
+}
+
+.about-title,
+.skills-title,
+.work-title,
+.contact-title {
+  color: #9388a2;
+  text-shadow: 1px 1px 0 aquamarine, 
+               2px 2px 0 aquamarine;
+}
+
+.tagcloud {
+  padding-bottom: 20%;
+}
+
+#navbar {
+  font-family: "Oswald", sans-serif;
+  font-size: larger;
+  font-weight: 500 !important;
+  letter-spacing: 3px;
+  background-color: transparent !important;
+  z-index: 1;
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  top: 40px;
+  text-align: center;
+  z-index: 5;
+}
+
+nav a , nav a:hover {
+  text-decoration: none;
+  color: #9388a2;
+  position: relative;
+  display: inline-block;
+  transition: all 0.25s cubic-bezier(1, 0, 0.58, 0.97); 
+}
+
+nav a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  top: calc(55% - 1px);
+  right: 0;
+  background: aquamarine;
+  transition: inherit;
+}
+
+nav a:hover:before {
+  left: 0;
+  width: 100%;
+}
+
+label {
+  color: aquamarine;
+  padding-top: 1%;
+}
+
+form {
+  width: 500px;
+  height: 300px;
+  padding-top: 2%;
+  font-family: "Oswald", sans-serif;
+}
+
+.btn-outline {
+  color: aquamarine;
+  background-color: #170b3b;
+  border-color: aquamarine;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  border-width: 3px;
+}
+
+.btn-outline:hover,
+.btn-outline:active,
+.btn-outline:focus,
+.btn-outline.active {
+  background: aquamarine;
+  color: #170b3b;
+  border-color: aquamarine;
+}
