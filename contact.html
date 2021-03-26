@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Contact</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <!-- Baffle.js -->
+    <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
+  </head>
+  <body>
+    <nav id="navbar" class="navbar sticky-top justify-content-center"></nav>
+    <section class="contact justify-content-center" id="contact">
+      <div class="container" id="contact-container">
+        <div class="row">
+          <h1 class="contact-title">Contact</h1>
+          <p class="contact-text">
+            If you are interested in working with me, feel free to send me a
+            message :)
+          </p>
+        </div>
+        <div class="row" id="email-form">
+          <form
+            role="form"
+            action="/assets/php/emailSender.php"
+            method="POST"
+            id="contact_form"
+          >
+            <label for="email">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Enter email"
+              required
+            />
+            <label for="exampleFormControlTextarea1">Message</label>
+            <textarea
+              class="form-control"
+              id="message"
+              rows="5"
+              placeholder="Enter message"
+              required
+            ></textarea>
+          </form>
+        </div>
+        <div class="row">
+          <div class="col-md-auto">
+            <button type="submit" class="btn btn-outline">Submit</button>
+          </div>
+          <div class="col-md-auto">
+            <a
+              href="https://www.linkedin.com/in/niko-jugovac-4070231b6/"
+              target="_blank"
+            >
+              <img src="/assets/icons/linkedin-icon.svg" id="linkedicon" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <script src="/assets/js/obfuscate.js"></script>
+    <script src="/assets/js/formHandler.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+    <!-- Navbar -->
+    <script src="/assets/js/navbar.js"></script>
+    <script src="/assets/js/navbarColor.js"></script>
+    <!-- Popper.js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
