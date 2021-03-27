@@ -18,5 +18,3 @@ const navbar = `<ul class="nav justify-content-between w-50">
 
 let navigationBar = document.querySelector("#navbar");
 navigationBar.innerHTML = navbar;
-
-// https://reactsocialmedia-cbeed.firebaseapp.com/
