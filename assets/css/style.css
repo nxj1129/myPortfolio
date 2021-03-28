@@ -107,15 +107,22 @@ html {
 
 #card > img {
   height: 300px;
-  width: 350px;
-  object-fit: fill;
+  width: 340px;
+  object-fit: cover;
   border: 1px solid aquamarine;
   padding: 3px;
-  box-shadow: 15px 10px #9388a2;
+  box-shadow: 10px 10px #9388a2;
 }
 
 #card > h3 {
   padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+#card:hover {
+  transition: transform 250ms ease-in;
+  cursor: pointer;
+  transform: scale(1.07);
 }
 
 .tagcloud {
